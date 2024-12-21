@@ -189,6 +189,17 @@ class Program
     }
 
 
+    static double SquareRoot(out double input)
+    {
+        Console.WriteLine("Введите число для вычисления квадратного корня:");
+        input = Convert.ToDouble(Console.ReadLine());
+        if (input < 0)
+        {
+            throw new InvalidOperationException("Невозможно вычислить квадратный корень из отрицательного числа.");
+        }
+        return Math.Sqrt(input);
+    }
+
     static double DegreeToRadian(double degree)
     {
         return degree * (Math.PI / 180);
