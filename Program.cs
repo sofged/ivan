@@ -5,3 +5,4 @@
         angle = Convert.ToDouble(Console.ReadLine());
         return Math.Sin(DegreeToRadian(angle));
     }
+    //sosal
