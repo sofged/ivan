@@ -98,7 +98,7 @@ class Program
             }
         }
     }
-    
+
     static double Add(out string expression)
     {
         Console.WriteLine("Введите два числа, разделенные пробелом:");
@@ -189,11 +189,15 @@ class Program
     }
 
 
-    
-
-    static double DegreeToRadian(double degree)
+    static double SquareRoot(out double input)
     {
-        return degree * (Math.PI / 180);
+        Console.WriteLine("Введите число для вычисления квадратного корня:");
+        input = Convert.ToDouble(Console.ReadLine());
+        if (input < 0)
+        {
+            throw new InvalidOperationException("Невозможно вычислить квадратный корень из отрицательного числа.");
+        }
+        return Math.Sqrt(input);
     }
 
     static void ShowHistory()
