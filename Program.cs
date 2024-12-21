@@ -98,13 +98,11 @@ class Program
             }
         }
     }
-    
-    static void ShowHistory()
+
+    static double Sine(out double angle)
     {
-        Console.WriteLine("\nИстория вычислений:");
-        foreach (var entry sin history)
-        {
-            Console.WriteLine(entry);
-        }
+        Console.WriteLine("Введите угол в градусах:");
+        angle = Convert.ToDouble(Console.ReadLine());
+        return Math.Sin(DegreeToRadian(angle));
     }
 }
