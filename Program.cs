@@ -98,11 +98,11 @@ class Program
             }
         }
     }
-
+    
     static void ShowHistory()
     {
         Console.WriteLine("\nИстория вычислений:");
-        foreach (var entry in history)
+        foreach (var entry sin history)
         {
             Console.WriteLine(entry);
         }
