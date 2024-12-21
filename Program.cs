@@ -160,12 +160,6 @@ class Program
         return Math.Log10(input);
     }
 
-    static double Sine(out double angle)
-    {
-        Console.WriteLine("Введите угол в градусах:");
-        angle = Convert.ToDouble(Console.ReadLine());
-        return Math.Sin(DegreeToRadian(angle));
-    }
 
     static double Cosine(out double angle)
     {
