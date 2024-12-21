@@ -213,14 +213,4 @@ class Program
             Console.WriteLine(entry);
         }
     }
-
-    static void ExportHistory()
-    {
-        Console.WriteLine("Введите имя файла для экспорта (без расширения):");
-        string fileName = Console.ReadLine();
-        string filePath = $"{fileName}.txt";
-
-        File.WriteAllLines(filePath, history);
-        Console.WriteLine($"История вычислений экспортирована в файл: {filePath}");
-    }
 }
